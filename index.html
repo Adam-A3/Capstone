@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam's Robots</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <svg width="100" height="100"> <!--Creates 'canvas' for SVG art-->
+            <circle cx="50" cy="50" r="50" fill="white"></circle>
+            <text x="35" y="50" font-size="25px">
+                AR
+            </text>
+        </svg>
+        <h1>Adam's Robots</h1>
+
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu"> <!--Creates the hamburger on smaller screens-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        <nav id="navLinks" class="navLinks"> <!--The navigation links to get to other pages-->
+            <a class="navlink" href="about.html">About</a>
+            <a class="navlink" href="services.html">Services</a>
+            <a class="navlink" href="gallery.html">Gallery</a>
+            <a class="navlink" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero"> <!--The hero section-->
+            <img class="hero-img" src="img/hero1.png" alt="A humanoid robot standing infront of a futuristic city."> <!--Hero image-->
+            <div class="hero-content"> <!--Contains text and CTA button-->
+                <h1>Adam's Robots</h1>
+                <p>Humanoid robots for every task</p>
+                <a href="services.html">Our Robots</a> <!--CTA button-->
+            </div>
+        </div>
+        <div class="features"> <!--Features section-->
+            <h2>Features</h2>
+            <div class="features-grid"> <!--Contains the cards-->
+                <div class="feature-card"> <!--three feature cards-->
+                    <h3>Robots</h3>
+                    <p>Adam's Robots creates the best humanoid robots in the market for sale. With six different specialized robots, they are prepared for any task at hand</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Placeholder</h3>
+                    <p>Placeholder</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Placeholder</h3>
+                    <p>Placeholder</p>
+                </div>
+            </div>
+            <a href="services.html" class="repeat-CTA">Our Robots</a> <!--Repeat CTA-->
+        </div>
+    </main>
+    <br>
+    <footer> <!--Site footer-->
+        <p>&copy;2026 Adam's Robots</p>
+    </footer>
+</body>
+<script src="js/script.js"></script> <!--Links javascript file-->
+</html>

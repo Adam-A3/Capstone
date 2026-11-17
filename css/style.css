@@ -1,0 +1,186 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    margin: 0; /*Resets margins*/
+    font-family: 'Space Mono';
+    font-weight: 400;
+}
+
+h1{ /*Font for h1*/
+    font-family: 'Black Ops One';
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.5rem,3vw,3rem);
+}
+
+h2{ /*Font for h2*/
+    font-family: 'Black Ops One';
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.5rem,3vw,3rem);
+}
+
+h3{
+   font-family: 'Black Ops One';
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.2rem,2.4vw,2.5rem); 
+}
+
+header{ /*Aligns items in the header and sets text and BG color*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: #FFFFFF;
+    position: sticky; /*Makes header stay in place*/
+    top: 0;
+    z-index: 10;
+}
+
+.navlink{ /*Sets style for links in navigation*/
+    color: #FFF838;
+    font-size: clamp(1rem,1.5vw,1.8rem);
+}
+
+.navlink:hover{ /*Changes color when hovered over*/
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* The three hamburger bars */
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Displays hamburger on mobile*/
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navLinks {
+        display: none;
+
+        position: absolute;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background-color: blue;
+
+        flex-direction: column;
+        gap: 0;
+    }
+
+    
+    .navLinks.active {
+        display: flex;
+    }
+}
+
+.hero{ /* Keeps all items in hero in proper postion*/
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.hero-content{ /*Properly aligns text items in the hero section*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-content h1{
+    font-size: clamp(2.5rem,5vw,4rem);
+}
+
+.hero-content p{
+    font-size: clamp(1.5rem,2.2vw,3rem);
+    -webkit-text-stroke: 1px black; /*Gives black outline*/
+    font-weight: bolder;
+}
+
+.hero-content a{ /*Creates a CTA button*/
+    border-style: solid;
+    border-radius: 14px;
+    background-color: blue;
+    padding: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: clamp(1rem,1.5vw,2rem);
+}
+.hero-content a:hover{ /*Chnages color when hovered over*/
+    background-color: #FFFFFF;
+    color: blue;
+}
+
+.hero-img{ /*Sets properties for the hero image*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.features{ /*Centers text in features section*/
+    text-align: center;
+}
+
+.features-grid{ /*Sets the layout of the cards*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    padding: 24px;
+}
+
+.feature-card{ /*Gives each card a border*/
+    border-style: solid;
+    border-color: blue;
+}
+
+.repeat-CTA{ /*Same as first CTA but with a differnt border color*/
+    border-style: solid;
+    border-radius: 14px;
+    background-color: blue;
+    padding: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: clamp(1rem,1.5vw,2rem);
+    border-color: black;
+}
+
+.repeat-CTA:hover{ /*Changes color when hovered over*/
+    background-color: #FFFFFF;
+    color: blue;
+}
