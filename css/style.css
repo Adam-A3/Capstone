@@ -184,3 +184,65 @@ header{ /*Aligns items in the header and sets text and BG color*/
     background-color: #FFFFFF;
     color: blue;
 }
+
+.our-story{ /*Sets the layout for the our story grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    border-bottom: dashed blue;
+}
+
+@media (max-width: 768px){ /*Adjusts grid for smaller screens*/
+    .our-story{
+        grid-template-columns: 1fr
+    }
+}
+.story-image img{ /*Prevents image from exceeding container*/
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.story p{ /*Sets font size of story text*/
+    font-size: clamp(1.4rem,1.8vw, 2rem);
+}
+
+.wwb{ /*Centers text of What we believe section*/
+    text-align: center;
+}
+
+.wwb-grid{ /*Creates the layout for what we believe  cards*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    padding: 24px;
+}
+
+.wwb-card{ /*Adds a blue border to each card*/
+    border-style: solid;
+    border-color: blue;
+}
+
+.wwb-card img{ /*SVG star*/
+    width: clamp(1.2rem,2.4vw,2.5rem); /*Resposnive size*/
+    height: auto;
+    vertical-align: middle; /*Sets star in correct location*/
+}
+
+.wwb-card h3{ /*Sets the card heading in right spot*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+aside{ /*Aside content*/
+    float: right; /*Moves text to the right of screen*/
+    border-left: blue dashed; /*Adds a left border*/
+}
+
+aside h2{ /*Aside heading*/
+    font-size: clamp(0.8rem,1vw, 1.4rem) /*Responsive font size*/
+}
+
+aside p{ /*aside paragraph text*/
+    font-size: clamp(0.8rem,1vw, 1.4rem) /*Resposive font size*/
+}
